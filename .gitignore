@@ -1,0 +1,54 @@
+# ---------------------------------------------------------------
+# Kaynak belgeler ve türetilmiş veriler
+#
+# KHAS'ın resmi yönergeleri bu depoda dağıtılmıyor: kurumun kendi
+# belgeleri, yeniden yayımlamak doğru olmaz. Kullanıcı bunları
+# khas.edu.tr'den indirip khas-docs/ klasörüne koyar (bkz. README).
+# ---------------------------------------------------------------
+khas-docs/*
+!khas-docs/.gitkeep
+
+docs/*
+!docs/.gitkeep
+
+data/*
+!data/.gitkeep
+
+# Demo hazırlığının geçici yedeği
+demo-yedek/
+
+# ---------------------------------------------------------------
+# Python
+# ---------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# Sanal ortamlar (GPU kurulumu için ayrı venv gerekiyor)
+venv/
+.venv/
+.gpu-venv/
+env/
+
+# ---------------------------------------------------------------
+# Çalışma dosyaları
+# ---------------------------------------------------------------
+*.log
+*.bak
+*.db
+*.db.yedek
+
+# Proje kapsam dokümanı ve kişisel notlar
+Summer School Foundry Local Plan.pdf
+ogrenim_ucretleri_*.txt
+sunum-metni.md
+
+# ---------------------------------------------------------------
+# Araç ve işletim sistemi
+# ---------------------------------------------------------------
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
+desktop.ini

@@ -1,0 +1,12 @@
+# KHAS Yonerge Asistani - Python bagimliliklari
+#
+# GPU'yu devreye almak icin AYRI bir sanal ortamda 'foundry-local-sdk'
+# gerekiyor (bkz. tools/enable_gpu.py). Uygulamanin kendisi SDK'yi
+# kullanmaz; Foundry Local'in HTTP ucuna baglanir.
+# Kurulum: pip install -r requirements.txt
+
+openai>=1.0.0        # Foundry Local'in OpenAI-uyumlu endpoint'ine baglanmak icin
+numpy>=1.24.0        # cosine similarity hesabi
+pdfplumber>=0.10.0   # PDF tablo cikarimi (ucret tablosu icin sart)
+pypdf>=4.0.0         # PDF metin cikarimi (yonergeler icin)
+streamlit>=1.30.0    # web arayuzu (src/app.py)
